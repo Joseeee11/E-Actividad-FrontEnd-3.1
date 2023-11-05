@@ -140,6 +140,9 @@ h2 {
 
     /*Letra*/
     color: #f2f2f2;
+
+    /*Animación*/
+    animation: fondo_dinamico 5.5s linear infinite;  /*ANIMATION: aplica una animación a los estilos de un determinado elemento; VALOR: nombre, duración de animación, progresión de la animación en cada ciclo (LINEAR: velocidad uniforme), numero de veces que un ciclo de animación debe ser ejecutado (INFINITE: repetición infinita)*/
 }
 .text_servicio_der {
     /*Radio de los bordes*/
@@ -149,8 +152,6 @@ h2 {
     /*Fondo*/
     background: linear-gradient( to right top,  #2b1717, #3b0510, #a8030eee, #3b0510,  #2b1717); /*LINEAR-GRADIENT: transición progresiva entre dos o más colores a lo largo de una línea recta*/
     background-size: 400% 400%; /*Le damos el ancho y largo del tamaño de la imagen fondo*/
-
-    /*..*/
 }
 .text_servicio_izq {
     /*Radio de los bordes*/
@@ -160,8 +161,6 @@ h2 {
     /*Fondo*/
     background: linear-gradient( to right top,  #2b1717, #3b0510, #a8030eee, #3b0510,  #2b1717);
     background-size: 400% 400%;
-
-    /*..*/
 }
 
 .text_servicio_der, .text_servicio_izq, .img_servicio_der , .img_servicio_izq {
@@ -174,6 +173,20 @@ h2 {
     transform: scale(1.1); 
 }
 
+/*@KEYFRAMES: es una regla de CSS que permite construir animaciones.          ¡¡Recordarme!!: Las reglas Css son las sentencias en las hojas de estilo, hay dos tipos de @ y las comunes*/
+@keyframes fondo_dinamico { /*nombre de la animación*/
+    0% { /*cuando la animación vaya a este porciento (a este tiempo)*/
+        background-position: 0% 50%; /*cambia la posición del fondo*/
+    } 25% {
+        background-position: 50% 50%;
+    } 50% {
+        background-position: 100% 50%;
+    } 75% {
+        background-position: 50% 50%;
+    } 100% {
+        background-position: 0% 50%;
+    }
+}
 
 /*Tamaño de fuentes*/
 .text_servicio_der h3, .text_servicio_izq h3 {
