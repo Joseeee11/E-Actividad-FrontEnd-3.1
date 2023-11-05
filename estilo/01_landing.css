@@ -90,7 +90,17 @@ main {
     background-color: #A8030F;
 }
 
-/*  .... */
+/*PSEUDO-CLASES     palabra clave agregada a un selector, que permiten definir diferentes estados a los elementos seleccionados*/
+.button_registrate:active { /*ACTIVE: al activar un boton con el click*/
+    border: 2px solid #000;
+    background-color: #d3d3d3;
+    transform: scale(.9); /*TRANSFORM: transforma el elemento; SCALE: transformar tamaño */
+}
+.button_iniciar:active { 
+    border: 2px solid #000;
+    background-color: #ec3542;
+    transform: scale(.9);
+}
 
 
 /* SEGUNDA SECTION. SECCIÓN DE PRESENTACIÓN DE SERVICIO */
@@ -140,8 +150,7 @@ h2 {
     background: linear-gradient( to right top,  #2b1717, #3b0510, #a8030eee, #3b0510,  #2b1717); /*LINEAR-GRADIENT: transición progresiva entre dos o más colores a lo largo de una línea recta*/
     background-size: 400% 400%; /*Le damos el ancho y largo del tamaño de la imagen fondo*/
 
-    /*Animación*/
-    animation: fondo_dinamico 5.5s linear infinite;
+    /*..*/
 }
 .text_servicio_izq {
     /*Radio de los bordes*/
@@ -152,16 +161,18 @@ h2 {
     background: linear-gradient( to right top,  #2b1717, #3b0510, #a8030eee, #3b0510,  #2b1717);
     background-size: 400% 400%;
 
-    /*Animación*/
-    animation: fondo_dinamico 5.5s linear infinite;  /*ANIMATION: aplica una animación a los estilos de un determinado elemento; VALOR: nombre, duración de animación, progresión de la animación en cada ciclo (LINEAR: velocidad uniforme), numero de veces que un ciclo de animación debe ser ejecutado (INFINITE: repetición infinita)*/
+    /*..*/
 }
 
-.text_servicio_der, .text_servicio_izq, .img_servicio_der, .img_servicio_izq {
-    /*Transición*/
-    transition: transform 1s ease-in-out; /*TRANSITION: permite definir la transición entre dos estados de un elemento; VALOR: propiedad a la que se le aplica, duración de transición, velocidad de la transición (EASE-IN-OUT: empieza y acaba lentamente, y en la central es rápido)*/
-}
+.text_servicio_der, .text_servicio_izq, .img_servicio_der , .img_servicio_izq {
+    /*Transición */
+    transition: transform 1s ease-in-out;  /*TRANSITION: permite definir la transición entre dos estados de un elemento; VALOR: propiedad a la que se le aplica, duración de transición, velocidad de la transición (EASE-IN-OUT: empieza y acaba lentamente, y en la central es rápido)*/
+} 
 
-/*  ....  */
+/*PSEUDO-CLASES*/
+.text_servicio_der:hover, .text_servicio_izq:hover, .img_servicio_der:hover, .img_servicio_izq:hover { /*HOVER: cuando el cursor pasa sobre un elemento*/
+    transform: scale(1.1); 
+}
 
 
 /*Tamaño de fuentes*/
@@ -254,7 +265,11 @@ h2 {
     border: 8px dotted #262626; /*VALOR: tamaño, tipo, color*/
 }
 
-/*  ...  */
+/*PSEUDO-CLASES para text_bases*/
+.text_bases:hover {
+    /* Fondo */
+    background: linear-gradient( to right top, #a69c94, #f2f2f2bb, #f2f2f2bb,  #a69c94);
+}
 
 /*Elementos p, ul, li dentro de text_bases*/
 .text_bases p {
