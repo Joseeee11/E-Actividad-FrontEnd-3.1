@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* <!-- Hecho por Javier Olivar, Cedula: 30.737.648 -->
+<!-- Actividad-FrontEnd-3.1 --> */
+
+@font-face {
+  font-family: "velocidad";
+  src: url("../font/High_Speed.otf");
+}
 
 * {
   margin: 0;
@@ -49,6 +55,7 @@ nav .menu {
   color: #fff;
   font-size: 52px;
   font-weight: 600;
+  font-family: "velocidad";
 }
 
 .px-3 .btns {
