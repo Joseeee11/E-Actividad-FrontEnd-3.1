@@ -52,7 +52,14 @@ main {
     font-size: 20px;
 }
 
-/*  .... */
+/*PSEUDO-ELEMENTOS: permiten añadir estilos a una parte concreta del documento*/
+.fondo_text p::before, .fondo_text p::after { /*BEFORE: añade un primer hijo al elemento seleccionado; AFTER: añade un ultimo hijo al elemento seleccionado; AMBOS POR MEDIO de CONTENT""*/
+    content: "↓";
+
+    /*Características para ese añadido*/
+    color: #f2f2f2;
+    font-size: 25px;
+}
 
 /*Botones "Regístrate" e "Iniciar" dentro de .fondo_text*/
 .button_registrate, .button_iniciar {
