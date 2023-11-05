@@ -84,3 +84,136 @@ main {
 }
 
 /*  .... */
+
+
+/* SEGUNDA SECTION. SECCIÓN DE PRESENTACIÓN DE SERVICIO */
+/*Titulo de esa section*/
+h2 {
+    /*Margen*/
+    margin: 120px auto; /*de los lados toma un valor automático*/
+
+    /*Texto*/
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 5px 0px 8px #a8030f82, -5px 0px 8px #A8030F82; /*TEXT-SHADOW: agrega sombras al texto; VALOR: eje X, eje Y, desenfoque, color*/
+}
+.cont {
+    margin: 80px 0;
+
+}
+.cont_servicio {
+    /*Estructura de cont_servicio*/
+    display: grid; /*GRID: basa sus elementos a un diseño de cuadrículas con filas y columnas, permitiendo dividir la página en partes y definir tamaños, posiciones...*/
+    grid-template-columns: 1fr 1fr; /*GRID-TEMPLATES-COLUMNS: define el número de columnas y los tamaños asignados a cada una; VALOR: fr=fracción indica una fracción del espacio disponible en el contenedor de la cuadrícula.*/
+
+    grid-gap: 35px;  /*GRID-GAP: establece los espacios entre las filas o las columnas de la cuadricula*/
+    margin: 70px 30px;
+}
+/*Textos dentro de article en cont_servicio*/
+.text_servicio_izq, .text_servicio_der {
+    /*Elementos dentro de text_servicio*/
+    padding: 10px;   /*PADDING (relleno): separación entre el borde y el contenido; VALOR: para todos los lados*/
+    margin: 0 40px;  /*MARGIN (margen): separación entre borde y la página; VALOR: para arriba_abajo y derecha-izquierda*/
+    text-align: center;
+
+    /*Alinear ;)*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /*APACE-AROUND: los elementos tienen el mismo espacio a su alrededor*/
+
+    /*Letra*/
+    color: #f2f2f2;
+}
+.text_servicio_der {
+    /*Radio de los bordes*/
+    border-bottom-left-radius: 50px; /*BORDER-BOTTOM-LEFT-RADIUS: Radio del borde de la esquina inferior izquierda*/
+    border-top-right-radius: 50px; /*BORDER-TOP-RIGHT-RADIUS: Radio del borde de la esquina superior derecha*/
+
+    /*Fondo*/
+    background: linear-gradient( to right top,  #2b1717, #3b0510, #a8030eee, #3b0510,  #2b1717); /*LINEAR-GRADIENT: transición progresiva entre dos o más colores a lo largo de una línea recta*/
+    background-size: 400% 400%; /*Le damos el ancho y largo del tamaño de la imagen fondo*/
+
+    /*Animación*/
+    animation: fondo_dinamico 5.5s linear infinite;
+}
+.text_servicio_izq {
+    /*Radio de los bordes*/
+    border-top-left-radius: 50px; /*BORDER-TOP-LEFT-RADIUS: Radio del borde de la esquina superior izquierda*/
+    border-bottom-right-radius: 50px; /*BORDER-BOTTOM-RIGHT-RADIUS: Radio del borde de la esquina inferior derecha*/
+
+    /*Fondo*/
+    background: linear-gradient( to right top,  #2b1717, #3b0510, #a8030eee, #3b0510,  #2b1717);
+    background-size: 400% 400%;
+
+    /*Animación*/
+    animation: fondo_dinamico 5.5s linear infinite;  /*ANIMATION: aplica una animación a los estilos de un determinado elemento; VALOR: nombre, duración de animación, progresión de la animación en cada ciclo (LINEAR: velocidad uniforme), numero de veces que un ciclo de animación debe ser ejecutado (INFINITE: repetición infinita)*/
+}
+
+.text_servicio_der, .text_servicio_izq, .img_servicio_der, .img_servicio_izq {
+    /*Transición*/
+    transition: transform 1s ease-in-out; /*TRANSITION: permite definir la transición entre dos estados de un elemento; VALOR: propiedad a la que se le aplica, duración de transición, velocidad de la transición (EASE-IN-OUT: empieza y acaba lentamente, y en la central es rápido)*/
+}
+
+/*  ....  */
+
+
+/*Tamaño de fuentes*/
+.text_servicio_der h3, .text_servicio_izq h3 {
+    font-size: 24px;
+}
+.text_servicio_der p, .text_servicio_izq p {
+    font-size: 18px;
+}
+
+/*Imágenes dentro de cont_servicio*/
+.img_servicio_izq, .img_servicio_der{
+    /*Dimensiones*/
+    height: 200px;
+    width: 400px;
+
+    /*Ajuste de imagen*/
+    object-fit: cover; /*OBJECT-FIT: establece cómo se debe cambiar el tamaño del contenido de un elemento dentro de su contenedor; COVER: llena todo el cuadro de contenido del elemento, se recortará para ajustarse*/
+}
+.img_servicio_der {
+    /*Margen*/
+    margin-right: auto;
+    padding-left: 40px;
+
+    /*Forma de los bordes*/
+    border-top-left-radius: 20%; 
+    border-bottom-right-radius: 50px;
+}
+.img_servicio_izq {
+    /*Margen*/
+    margin-left: auto;
+    padding-right: 40px;
+
+    /*Forma de los bordes*/
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 20%; 
+
+    object-position: top; /*OBJECT-POSOTION: establece la posición del contenido dentro de un elemento; TOP: arriba*/
+}
+
+/*Parrafos de invitación al servicio dentro de cont_servicio*/
+.invita_servicio, .invita_servicio_reg {
+    /*Medidas extra*/
+    margin: 40px 0;
+
+    /*Centrado del texto*/
+    text-align: center;
+
+    /*Tamaño*/
+    font-size: 28px;
+}
+.invita_servicio_reg {
+    /*Tamaño*/
+    font-size: 35px;
+    text-shadow: 5px 0px 8px #a8030f82, -5px 0px 8px #a8030f82;
+
+}
+.invita_servicio_reg a {
+    text-decoration: none;
+    font-weight: 800; /*VALOR 800: Bold (negrita)*/
+    color: #530615;
+}
