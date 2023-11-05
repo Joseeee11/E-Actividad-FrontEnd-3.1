@@ -1,2 +1,86 @@
 /*autor(a): Rosimar Barrios*/
 /*PALETA DE COLORES: #530615 #A8030F #A69C94 #F2F2F2 #262626*/
+
+/*DISPLAY: establece los tipos de visualización de un elemento tanto externa e interna (sus nodos hijos, su contenido) 
+  FLEXBOX: alinear elementos    GRID: realizar estructura*/
+  
+* {
+    /*Igual a cero para quitar el margen predeterminado de la página*/
+    margin: 0; /*para todos los lados*/
+}
+
+main {
+    /*Fondo para todo el main de la página*/
+    background-color:  #d8d8d8; /*BACGROUND-COLOR: establece un color de fondo*/
+}
+
+/*PRIMERA SECTION. SECCIÓN PRINCIPAL*/
+.fondo_text {
+    /*Dimensiones de .fondo_text*/
+    width: 100%; /*ancho*/
+    height: 100vh; /*largo*/
+
+    /*Fondo imagen de .fondo_text */
+    background-image: linear-gradient(#000000b3, #000000b3), url("../imagenes/landing_page/fondo_01.jpg"); /*BACKGROUND-IMAGE: establece una imagen de fondo para un elemento; */
+    background-position: center; /*BACKGROUND-POSITION: Posicionamiento de la imagen de fondo; CENTER: en el centro*/
+    background-size: cover; /*BACKGROUND-SIZE: especifica el tamaño de las imágenes de fondo; COVER: Escala la imagen al mayor tamaño posible sin estirarla*/
+
+    /*Elementos dentro de .fondo_text*/
+    text-align: center; /*TEXT-ALING: permite establecer la alineación horizontal de un bloque de texto; CENTER: al centro*/
+    color: #F2F2F2; /*color de los caracteres*/
+
+    /*Vista de alineación de elementos*/
+    display: flex; /*FLEX: el elemento se comporta como un elemento de bloque, los nodos hijo se convierten en elementos flexibles, es decir se pueden distribuir en dirección vertical u horizontal y sus tamaños son manejables*/
+    flex-direction: column; /*FLEX-DIRECTION: determina la dirección en que se ordenarán los elementos en el espacio; COLUMN: de arriba a abajo*/
+    justify-content: center; /*JUSTIFY-CONTENT: define cómo el navegador distribuye el espacio entre y alrededor de los items flex; CENTER: Alinear items en el centro*/
+}
+
+/*Estilos específicos para los elementos dentro de .fondo_text*/
+.fondo_text p, .fondo_text h3, .fondo_text h1, .fondo_text div {
+    margin: 6vh auto;
+}
+.fondo_text h1 {
+    font-size: 55px; /*FONT-SIZE: establece el tamaño de la fuente(letra)*/
+    text-shadow: 5px 5px 10px #000; /*TEXT-SHADOW: agrega sombras al texto, sus valores se componen de eje X; eje Y; Desenfoque; color*/
+}
+.fondo_text h3 {
+    font-size: 28px;
+    text-shadow: 5px 5px 10px #000;
+
+}
+.fondo_text p {
+    font-size: 20px;
+}
+
+/*  .... */
+
+/*Botones "Regístrate" e "Iniciar" dentro de .fondo_text*/
+.button_registrate, .button_iniciar {
+    /*Dimensiones*/
+    height: 55px;
+    width: 200px;
+    margin: 20px 70px;
+
+    /*Bordes*/        /*None para quitar el borde predeterminado de los botones*/
+    border: none; /*BORDER: resumen de caracteristicas a los bordes; NONE: ninguno*/
+    border-radius: 15px; /*BORDER-RADIUS: Radio de todos los bordes*/
+    box-shadow: 5px 5px 10px #000; /*BOX-SHADOW: agrega sombras a la caja, sus valores se componen de eje X; eje Y; Desenfoque; color*/
+
+    /*Texto del boton*/
+    font-size: 26px;
+    font-weight: 600; /*FONT-WEIGTH: establece negrita a los caracteres con un determinado peso; VALOR 600: Semi Bold (semi negrita)*/
+    color: #000; /*COLOR: da un valor a los caracteres*/
+
+    /*Transición*/
+    transition: transform .3s;
+}
+.button_registrate {
+    /*Fondo*/
+    background-color: #d0c4b9ee; 
+}
+.button_iniciar {
+    /*Fondo*/
+    background-color: #A8030F;
+}
+
+/*  .... */
