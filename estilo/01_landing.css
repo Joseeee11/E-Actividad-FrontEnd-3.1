@@ -217,3 +217,53 @@ h2 {
     font-weight: 800; /*VALOR 800: Bold (negrita)*/
     color: #530615;
 }
+
+
+ /* TERCERA PARTE. SECCION DE BASES ORGANIZACIONALES  */
+ .cont_bases {
+    /*Vista de estructura de los elementos dentro de .cont_bases*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /*espaciado entre elementos*/
+    grid-gap: 35px;
+    margin: 50px 30px 0px 30px; /*VALOR: izquierda, derecha, abajo, arriba*/
+}
+.text_bases {
+    /*Centrado, margen y padding de los textos en cont_bases*/
+    text-align: center;
+    margin: 50px 5px;
+    padding: 15px;
+
+    /*Tamaño del texto; solo afectará a h3 pues los elementos p y li se les da su tamaño más abajo*/
+    font-size: 28px;
+
+    /*Alinear elementos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*SPACE-BETWEEEN: espacio entre los elementos, donde el primero este al inicio y el último al final de la cuadricula*/
+
+    /*Borde*/
+    border: 8px dotted #262626; /*VALOR: tamaño, tipo, color*/
+}
+
+/*  ...  */
+
+/*Elementos p, ul, li dentro de text_bases*/
+.text_bases p {
+    /*Tamaño y margen*/
+    font-size: 18px;
+    margin: 20px 0;
+}
+.text_bases ul {
+    /*Para quitar los estilos predeterminados de las listas*/
+    list-style: none; /*permite configurar todas las propiedades de estilo para lista a la vez; NONE: ninguno*/
+
+    /*Igual a cero para quitar el padding predeterminado de las listas*/
+    padding: 0;
+}
+.text_bases li {
+    /*Tamaño y margen*/
+    font-size: 20px;
+    margin: 14px 0;
+}
