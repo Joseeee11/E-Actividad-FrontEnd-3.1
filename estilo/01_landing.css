@@ -1,12 +1,21 @@
-/*autor(a): Rosimar Barrios*/
+/*autor(a): Rosimar Barrios  ----  github: rossjbm*/
 /*PALETA DE COLORES: #530615 #A8030F #A69C94 #F2F2F2 #262626*/
 
 /*DISPLAY: establece los tipos de visualización de un elemento tanto externa e interna (sus nodos hijos, su contenido) 
   FLEXBOX: alinear elementos    GRID: realizar estructura*/
-  
+
+/*Fuente descargada*/
+@font-face {
+    font-family: "velocidad";
+    src: url("../font/High_Speed.otf");
+}
+
 * {
     /*Igual a cero para quitar el margen predeterminado de la página*/
     margin: 0; /*para todos los lados*/
+
+    /*Fuente para toda la pagina*/
+    font-family: "Poppins", sans-serif; /*FONT-FAMILY: establece la tipografía para el elemneto seleccionado*/
 }
 
 main {
@@ -40,7 +49,8 @@ main {
     margin: 6vh auto;
 }
 .fondo_text h1 {
-    font-size: 55px; /*FONT-SIZE: establece el tamaño de la fuente(letra)*/
+    font-size: 45px; /*FONT-SIZE: establece el tamaño de la fuente(letra)*/
+    font-family: "velocidad";
     text-shadow: 5px 5px 10px #000; /*TEXT-SHADOW: agrega sombras al texto, sus valores se componen de eje X; eje Y; Desenfoque; color*/
 }
 .fondo_text h3 {
@@ -244,9 +254,15 @@ h2 {
 
 }
 .invita_servicio_reg a {
-    text-decoration: none;
-    font-weight: 800; /*VALOR 800: Bold (negrita)*/
+    /*Para quitar la línea decorativa predeterminada de los enlaces*/
+    text-decoration: none; /*TEXT-DECORATION: da estilos a las líneas decorativas en el texto; NONE: ninguno*/
+
+    /*Color del texto*/
     color: #530615;
+
+    /*Tamaño y Tipografía*/
+    font-family: "velocidad";
+    font-size: 28px;
 }
 
 
@@ -265,9 +281,6 @@ h2 {
     text-align: center;
     margin: 50px 5px;
     padding: 15px;
-
-    /*Tamaño del texto; solo afectará a h3 pues los elementos p y li se les da su tamaño más abajo*/
-    font-size: 28px;
 
     /*Alinear elementos*/
     display: flex;
@@ -289,6 +302,11 @@ h2 {
     /*Tamaño y margen*/
     font-size: 18px;
     margin: 20px 0;
+}
+.text_bases h3 {
+    /*Tamaño del texto y tipografía*/
+    font-size: 24px;
+    font-family: "velocidad";
 }
 .text_bases ul {
     /*Para quitar los estilos predeterminados de las listas*/
