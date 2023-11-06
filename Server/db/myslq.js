@@ -1,12 +1,11 @@
 require('dotenv').config();
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
+    host     : 'localhost',
 // Variable de entorno
-  user     : process.env.USER,
-  password : process.env.PASSWORD,
-  database : process.env.DATABASE
-  
+    user     : process.env.USER,
+    password : process.env.PASSWORD,
+    database : process.env.DATABASE
 }); 
  
 connection.connect(function (err) {
