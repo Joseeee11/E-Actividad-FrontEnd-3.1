@@ -1,8 +1,7 @@
 /*autor(a): Rosimar Barrios  ----  github: rossjbm*/
 /*PALETA DE COLORES: #530615 #A8030F #A69C94 #F2F2F2 #262626*/
 
-/*DISPLAY: establece los tipos de visualización de un elemento tanto externa e interna (sus nodos hijos, su contenido) 
-  FLEXBOX: alinear elementos    GRID: realizar estructura*/
+/*FLEXBOX: alinear elementos    GRID: realizar estructura*/
 
 /*Fuente descargada*/
 @font-face {
@@ -38,7 +37,7 @@ main {
     text-align: center; /*TEXT-ALING: permite establecer la alineación horizontal de un bloque de texto; CENTER: al centro*/
     color: #F2F2F2; /*color de los caracteres*/
 
-    /*Vista de alineación de elementos*/
+    /*Vista de alineación de elementos*/  /*DISPLAY: establece los tipos de visualización de un elemento tanto externa e interna (sus nodos hijos, su contenido)*/
     display: flex; /*FLEX: el elemento se comporta como un elemento de bloque, los nodos hijo se convierten en elementos flexibles, es decir se pueden distribuir en dirección vertical u horizontal y sus tamaños son manejables*/
     flex-direction: column; /*FLEX-DIRECTION: determina la dirección en que se ordenarán los elementos en el espacio; COLUMN: de arriba a abajo*/
     justify-content: center; /*JUSTIFY-CONTENT: define cómo el navegador distribuye el espacio entre y alrededor de los items flex; CENTER: Alinear items en el centro*/
