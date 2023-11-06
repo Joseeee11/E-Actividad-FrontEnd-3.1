@@ -46,7 +46,7 @@ main {
 
 /*Estilos específicos para los elementos dentro de .fondo_text*/
 .fondo_text p, .fondo_text h3, .fondo_text h1, .fondo_text div {
-    margin: 6vh auto;
+    margin: 5vh auto;
 }
 .fondo_text h1 {
     font-size: 45px; /*FONT-SIZE: establece el tamaño de la fuente(letra)*/
