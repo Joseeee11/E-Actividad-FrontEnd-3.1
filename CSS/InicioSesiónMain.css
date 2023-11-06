@@ -1,3 +1,5 @@
+/* CSS de inicio de sesión Hecho por Cristian Rangel */
+
 body{
     margin: 0;
     padding: 0;
@@ -8,18 +10,20 @@ main{
     justify-content: center;
     align-items: center;
     height: 99vh;
+    background-color: #d8d8d8;
     
     /* background-image: url(" https://th.bing.com/th/id/OIG.Fbn1L7z8qx08W_5URqob?pid=ImgGn "); */
 }
 
 .bordeAnimado{
+    
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    border-radius: 2%;
+    border-radius: 10px;
     
     /* Animación */
     --tiempo-borde: 3s; /*Variable para la duración de la animación*/
@@ -47,6 +51,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .formulario{
@@ -94,14 +99,14 @@ main{
 
 .rellenar_label{
     position: absolute;
-    left: 1.2em;
-    top: -0.28em;
+    left: 3em;
+    top: -0.30em;
     background-image: linear-gradient(to right, transparent 0%, #530615 15%,#530615 85%, transparent 100%);
-    padding: 0.1em 0.5em;
-    margin-bottom: 0.5em;
+    padding: 0.2em 0.7em;
+    margin-bottom: 0.8em;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.875em;
-    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    letter-spacing: 0.5em;
     color: #f9e4e8 ;
     cursor: pointer;
     border-radius: 25%;
@@ -113,9 +118,10 @@ main{
     line-height: 1;
     border-style: none;
     outline: none;
-    height: 2em;
+    height: 3em;
     width: 85%;
-    padding: 0 1em;
+    padding: 1em 2em;
+    padding-top: 2em;
     border: 0.25em solid transparent;
     background-image: linear-gradient(#0000, #000000bf), linear-gradient(120deg, #530615 0%, #8f5e5e 100%);
     background-origin: border-box;
@@ -132,6 +138,7 @@ main{
 } 
 
 .Texto {
+    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
     & a {
@@ -169,7 +176,7 @@ main{
     color: white;
     text-align: center;
     font-size: 20px;
-    margin: 0.5em 0.2em;
+    margin: 18px 0.2em;
     padding: 0.8em 2em;
     font-family: Arial, sans-serif;
     border: 2px solid;
@@ -183,4 +190,10 @@ main{
     background-color: #480512;
     
     color: rgb(168, 168, 168);
+  }
+
+  .principal{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
