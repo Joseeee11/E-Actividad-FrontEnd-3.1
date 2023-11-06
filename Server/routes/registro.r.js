@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const registroControllers = require("../controllers/registro.c");
+var registroControllers = require("../controllers/registro.c.js");
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {

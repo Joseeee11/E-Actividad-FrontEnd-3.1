@@ -1,4 +1,4 @@
-const registroModel = require("../models/registro.m")
+const registroModel = require("../models/registro.m.js")
 
 //importamos bcrypt
 const bcryptjs = require('bcryptjs');
@@ -30,3 +30,5 @@ class registroControllers {
         })
     }
 }
+
+module.exports = new registroControllers();

@@ -136,9 +136,35 @@
           // Aquí puedes agregar tu código para validar los datos del formulario
         
           // Si todo está bien, envía el formulario
-          document.querySelector('.form').submit();
+          var form = document.querySelector('.form');
+          var data = new URLSearchParams(new FormData(form));
+        
+          fetch('http://localhost:3000/iniciar_sesion', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: data
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.result && data.result.confirmacion) {
+              window.location.href = '/catalogo';
+            } else {
+              // Muestra un mensaje de error
+              var errorDiv = document.createElement('div');
+              errorDiv.textContent = 'Usuario o contraseña incorrectos';
+              form.insertBefore(errorDiv, form.firstChild);
+            }
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
         });
         </script>
+        
+        
+        
       <!-- script para que la librería funcione -->
       <script src="../libs/bootstrap/js/bootstrap.min.js"></script> 
 </body>
