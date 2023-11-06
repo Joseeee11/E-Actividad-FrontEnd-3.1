@@ -11,54 +11,56 @@
     <link rel="stylesheet" type="text/css" href="../CSS/InicioSesiónMain.css">
     <title>Iniciar Sesión</title>
 </head>
-<!-- header hecho por el compañero Javier Olivar -->
-<header class="navbar navbar-expand-md fixed-top bg-light">
-    <nav class="container-fluid">
-      <img src="../imagenes/logo3.png" class="logo" alt="" />
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse menu" id="navbarCollapse">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3 justify-content-lg-center"></div>
-
-        <ul class="navbar-nav col-lg-6 justify-content-lg-end">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./01_landing.html">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./catalogo.html">Vehículos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./InicioSesión.html">Iniciar Sesión</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-</header>
-  <!--BARRA DE NAVEGACION -->
 
   
 <body>
+
+  <!-- header hecho por el compañero Javier Olivar -->
+<header class="navbar navbar-expand-md fixed-top bg-light">
+  <nav class="container-fluid">
+    <img src="../imagenes/logo3.png" class="logo" alt="" />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu" id="navbarCollapse">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-3 justify-content-lg-center"></div>
+
+      <ul class="navbar-nav col-lg-6 justify-content-lg-end">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./01_landing.html">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./catalogo.html">Vehículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./InicioSesión.html">Iniciar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!--BARRA DE NAVEGACION -->
+
     <main> <!-- Cristian Rangel inicio de sesión-->
         <div class="estilo bordeAnimado">
             <section class="centrar formulario">
                 <img class="formulario_logo" src="https://raw.githubusercontent.com/Joseeee11/E-Actividad-FrontEnd-3.1/main/Logo_ModoClaro.png" alt="logo">
                 <h2 class="principal" >Iniciar Sesión</h2>
-                <form class="formulario form" action="/login" method="post">
+                <form class="formulario form" action="http://localhost:3000/iniciar_sesion" method="post">
                     <div class="rellenar">
                         <label class="rellenar_label" for="email">Correo:</label>
                         <input class="rellenar_input" type="email" id="email" name="email" required>
@@ -126,6 +128,17 @@
           McQueen Concessionaire © 2023 | Todos los derechos reservados.
         </p>
       </footer>
+
+      <script>
+        document.getElementById('button_submit').addEventListener('click', function(e) {
+          e.preventDefault();
+        
+          // Aquí puedes agregar tu código para validar los datos del formulario
+        
+          // Si todo está bien, envía el formulario
+          document.querySelector('.form').submit();
+        });
+        </script>
       <!-- script para que la librería funcione -->
       <script src="../libs/bootstrap/js/bootstrap.min.js"></script> 
 </body>
