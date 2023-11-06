@@ -3,20 +3,23 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
 
 main{
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 99vh;
+    height: auto;
     background-color: #d8d8d8;
+    
     
     /* background-image: url(" https://th.bing.com/th/id/OIG.Fbn1L7z8qx08W_5URqob?pid=ImgGn "); */
 }
 
 .bordeAnimado{
-    
+    margin: 2vh 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -119,7 +122,7 @@ main{
     border-style: none;
     outline: none;
     height: 3em;
-    width: 85%;
+    width: 100%;
     padding: 1em 2em;
     padding-top: 2em;
     border: 0.25em solid transparent;
