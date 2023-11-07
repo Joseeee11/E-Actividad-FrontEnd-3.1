@@ -1,4 +1,4 @@
-const connection = require("../db/myslq");
+// const connection = require("../db/myslq");
 
 class registroModel {
     //agregar un usuario

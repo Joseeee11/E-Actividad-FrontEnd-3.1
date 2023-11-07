@@ -2,8 +2,7 @@ require('dotenv').config();
 var mysql = require('mysql');
 var connection = mysql.createConnection({
     host     : 'localhost',
-// Variable de entorno
-    user     : process.env.USER,
+    user     : 'root',
     password : process.env.PASSWORD,
     database : process.env.DATABASE
 }); 
