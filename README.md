@@ -10,7 +10,7 @@
 <br>
 
 <h2>Introducción</h2>
-<p><b>Link del video explicativo:</b>  </p>
+<p><b>Link del video explicativo:</b>  https://youtu.be/CLPSvv06maI</p>
 <p>Nuestro proyecto tiene como objetivo principal realizar los inicios de una página web tanto con su estructura base en lenguaje HTML <i>(HyperText Markup Language)</i>, como también darles estilos y una mejor vista para el usuario por medio del lenguaje CSS <i>(Cascading Style Sheets)</i>; este último centrándonos en crear un diseño basado en los principios UX/UI <i>(User Experience / User Interface)</i> de los cuales algunos en los que nos enfocamos son:</p> 
 <ul><li>Claridad y coherencia de la página web</li>
 	<li>Diseño eficaz y agradable</li>
