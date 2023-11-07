@@ -17,7 +17,7 @@
 	<li>Usabilidad intuitiva</li>
 	<li>Jerarquía Visual</li></ul>
 <p> La página web a crear consiste en un consecionario online de todo tipo de vehículos nuevos y usados, con un catálogo que incluye las caracteríasticas precisas y esenciales de cada vehículo necesarias para el usuario. De igual forma, un acceso a detalle de los mismos, un formulario de Inicio de Sesión y Registro breve e intuitivo, y una página principal Landing Page dedicada a presentar al usuario el servicio con beneficios precisos basados en las necesidades de los futuros clientes.</p>
-<p>Cabe aclarar que nuestro proyecto se centra en el Frontend de la página web, su interfaz, su diseño y los principios UX/UI; por lo que, el Backend a ejecutar será sencillo con el fin de gestionar los datos de la página, los inicios de sesión y el encriptado de contraseñas.</p>
+<p>Cabe aclarar que nuestro proyecto se centra en el Frontend de la página web, su interfaz, su diseño y los principios UX/UI; por lo que, el Backend a ejecutar será sencillo con el fin de gestionar determinados datos de la página y el encriptado de contraseñas.</p>
 <br>
 <h2>Tecnologías y Herramientas empleadas </h2>
 <p>En este punto lo dividiremos en dos partes: la primera con las herramientas empleadas para la interfaz, todo lo que se incluye en el <b>Frontend</b> de la página web; y una segunda parte con esas herramientas empleadas para le ejecución del servidor y DB <i>(Data Base)</i>, es decir, todo lo que se incluye en el <b>Backend</b> de la página web.</p>
@@ -25,9 +25,7 @@
 <h3>Primera Parte "Frontend"</h3>
 <p>Nuestra página web se compone de <b><i>HTML</i></b> y <b><i>CSS</i></b>; sin ningun uso de librerías o semejantes, a excepción de la página dedicada a los catálogos <i>(catalogo.html)</i>, el header y footer del sitio web, pues estas últimas fueron trabajadas con la librería de <b><i>Bootstrap</i></b>, el cual es un framework gratuito y de código abierto para diseños de sitios web.</p>
 <p>Por otro lado, para organizarnos, idear y planear el diseño del sitio web empleamos la herramienta de <b><i>Figma</i></b> el cual es un instrumento de generación de prototipos principalmente basada en la web. Allí se realizó el diseño de la estructura de diseño base y mockups del sitio web.</p>
-<p><b>Link de trabajo compartido en Figma:</b> https://www.figma.com/file/iuhhWdkXOo6bmPSxMRpGHZ/E-Actividad-3.1?type=design&node-id=0-1&mode=design&t=0OtxCC14hTxO7J03-0 
-<br></p>
-
+<br>
 <h3>Segunda Parte "Backend"</h3>
 <p>Principalmente la base de datos <i>(DB)</i> la trabajamos con <b><i>MySQL</i></b>, el cual es un sistema de gestión de bases de datos relacional.</p>
 <p><i>Se encuentra en la carpeta "DB" la llamamos "bd_mcqueen.sql"</i></p>
@@ -37,7 +35,8 @@
 	<li>Bcryptjs = <b><i>$npm i bcryptjs</i></b></li>
 	<li>JWT  =  <b><i>$npm i jsonwebtoken</i></b></li>
 	<li>MySQL  =  <b><i>$npm i mysql</i></b></li>
-	<li>Cookie  =  <b><i>$npm i cookie</i></b></li>
+	<li>Cookie  =  <b><i>$npm i cookie</i></b></li>	
+	<li>Cors  =  <b><i>$npm i cors</i></b></li>
 	<li>Dotenv  =  <b><i>$npm i dotenv</i></b></li></ul>
 <br>
 
@@ -49,23 +48,26 @@
 <h3>Arranque del Servidor</h3>
 <ol><li>En vista de que empleamos <i>.gitingnore</i> para ocultar archivos como <b>.env</b> o la carpeta de <b>node_modules</b>, primero ha de instalar <i>npm</i> de manera que se instalen todos los archivos necesarios para el funcionamiento del sistema. Esto lo podrá hacer con <i><b>$ npm i</b></i>.</li>
 <li>En el momento en que se instale correctamente <i>npm</i> podemos iniciar nuestro sistema con el comando <i><b>$ npm run server</b></i> con el cual llamará a <i>nodemon</i> y comenzará a correr nuestro servidor.</li>
-<li>Para probarlo podemos ir a nuestro navegador y escribir la url <i><b>http://localhost:3000/home</b></i> ; es de aclarar que dirigirse al puerto 3000 es en caso de que no lo hallamos dado acceso a los datos almacenados en las variables de entorno.</li></ol>
+<li>Para probarlo podemos ir a nuestro navegador y escribir la url <i><b>localhost:300/iniciar_sesion</b></i> ; es de aclarar que dirigirse al puerto 3000 es en caso de que no lo hallamos dado acceso a los datos almacenados en las variables de entorno.</li></ol>
 <h3>Sitio Web</h3>
-<p>Puede ver la página del Landing Page, Inicio de Sesión y Registrarse sin necesidad del arranque el sistema, de la siguiente forma:</p>
+<p>Puede ver todas las páginas sin necesidad del arranque el sistema, de la siguiente forma:</p>
 <p>Desplegamos la carpeta llamada <b><i>HTML</i></b>, le damos click derecho sobre alguno de los archivos <i>.html</i>, seleccionamos la opción <i>"Copiar ruta de acceso"</i>, nos dirigimos a nuestro navegador por preferencia, pegamos lo copiado en el buscador, e inmediatamente podemos observar la página</p>
-<p>Sin embargo, para poder interactuar bien y ver determinadas funcionalidades es necesario el arranque del sistema.</p>
+<p>Sin embargo, para poder interactuar bien y ver determinadas funcionalidades del inicio de sesión (por ejemplo) es necesario el arranque del sistema.</p>
 <h3>Figma:</h3>
-<p>Dentro de nuestro apartado de trabajo titulado <b>E-Actividad 3.1</b> en Figma se encuentran dos páginas, una llamada <b>Estructura de Diseño</b> que contiene las bases estructurales de los diseños de cada página, y otra llamada <b>Mockups</b> que contendrá los mockups de cada página.</p>
-<p>Cada página de Figma está compuesto por secciones tituladas con el nombre de su página del sitio web correspondiente. Además de una sección extra que muestra específicamente el header y footer del sitio web.</p>
+<p>Dentro de nuestro apartado de trabajo titulado <b>E-Actividad 3.1</b> en Figma se encuentran una página, llamada <b>Estructura de Diseño</b> que contiene las bases estructurales de los diseños de cada página</p>
+<p>Esta página se compone por secciones tituladas con el nombre de su página del sitio web correspondiente. Además de una sección extra que muestra específicamente el header y footer del sitio web.</p>
+<p><b>Link de primer trabajo compartido en Figma:</b> https://www.figma.com/file/iuhhWdkXOo6bmPSxMRpGHZ/E-Actividad-3.1?type=design&node-id=0-1&mode=design&t=0OtxCC14hTxO7J03-0 </p>
+<p>Luego en este otro apartado de trabajo titulado <b>Actividad FrontEnd 3.1</b> se encuentra una página llamada <b>Mockups</b> la cual contiene los diseños mockups de nuestro sitio web.</p>
+<p><b>Link de segundo trabajo compartido en Figma:</b> https://www.figma.com/file/BOeIav3lXddyaiG5uiCLyE/Actividad-FrontEnd-3.1?type=design&node-id=9-2&mode=design 
+<br></p>
 <h3>Datos Importantes de Funcionamiento:</h3>
 <ul>
-	<li>Para ver los detalles de determinados vehiculos <b>(Carro.html)</b>, se tendrá acceso desde la página de catálogo, allí cuenta con un botón <b>VER</b> que lleva a <i><b>http://localhost:3000/detalles</b></i></li>
+	<li>Para ver los detalles de determinados vehiculos <b>(Carro.html)</b>, se tendrá acceso desde la página de catálogo, allí cuenta con un botón <b>VER</b> que lleva a los detalles.</li>
 	<li>Esta compuesto solo por cinco páginas formadas por: una principal <b>01_landing.html</b>, dos formularios <b>IniciarSesion.html</b> y <b>registrar.html</b>, y las dos restantes <b>Carro.html</b> y <b>catalogo.html</b></li>
-	<li>El index de nuestro sitio web, es decir, el inicio es <b><i>01_landing.html</i></b>, entonces ejecutamos el paso 3 del arranque del sistema: ingresar la url <i><b>http://localhost:3000/home</b></i></li>
 	<li>Las páginas cuentan con una barra de navegación con los siguientes botones que llevan a:
-		<b>Home</b> -> <i><b>http://localhost:3000/home</b></i>
-		<b>Vehículos</b> -> <i><b>http://localhost:3000/catalogo</b></i>
-		<b>Iniciar Sesión</b> -> <i><b>http://localhost:3000/login</b></i></li>
+		<b>Home</b> -> <i><b>01_landing.html</b></i>
+		<b>Vehículos</b> -> <i><b>catalogo.html</b></i>
+		<b>Iniciar Sesión</b> -> <i><b>IniciarSesion.html</b></i></li>
 <li>Se implementaron variedad de propiedades para dar estilo en CSS, de las cuales se comenta la explicación de su función, y para que se emplearon en nuestro código. Algunos ejemplos: 
 
 ```
