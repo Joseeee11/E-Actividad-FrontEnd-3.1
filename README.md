@@ -10,7 +10,7 @@
 <br>
 
 <h2>Introducción</h2>
-<p><b>Link del video explicativo:</b>  https://youtu.be/CLPSvv06maI</p>
+<p><b>Link del video explicativo:</b>  </p>
 <p>Nuestro proyecto tiene como objetivo principal realizar los inicios de una página web tanto con su estructura base en lenguaje HTML <i>(HyperText Markup Language)</i>, como también darles estilos y una mejor vista para el usuario por medio del lenguaje CSS <i>(Cascading Style Sheets)</i>; este último centrándonos en crear un diseño basado en los principios UX/UI <i>(User Experience / User Interface)</i> de los cuales algunos en los que nos enfocamos son:</p> 
 <ul><li>Claridad y coherencia de la página web</li>
 	<li>Diseño eficaz y agradable</li>
@@ -54,8 +54,8 @@
 <p>Desplegamos la carpeta llamada <b><i>HTML</i></b>, le damos click derecho sobre alguno de los archivos <i>.html</i>, seleccionamos la opción <i>"Copiar ruta de acceso"</i>, nos dirigimos a nuestro navegador por preferencia, pegamos lo copiado en el buscador, e inmediatamente podemos observar la página</p>
 <p>Sin embargo, para poder interactuar bien y ver determinadas funcionalidades del inicio de sesión (por ejemplo) es necesario el arranque del sistema.</p>
 <h3>Figma:</h3>
-<p>Dentro de nuestro apartado de trabajo titulado <b>E-Actividad 3.1</b> en Figma se encuentran una página, llamada <b>Estructura de Diseño</b> que contiene las bases estructurales de los diseños de cada página</p>
-<p>Esta página se compone por secciones tituladas con el nombre de su página del sitio web correspondiente. Además de una sección extra que muestra específicamente el header y footer del sitio web.</p>
+<p>Dentro de nuestro apartado de trabajo titulado <b>E-Actividad 3.1</b> en Figma se encuentran una página, llamada <b>Estructura de Diseño</b> que contiene las bases estructurales de los diseños de cada página; y otra página titulada <b>Árboles CSSDOM</b>donde se encuentran los árboles CSSDOM de nuestro sitio web</p>
+<p>Estas páginas se componen por secciones tituladas con el nombre de su página del sitio web correspondiente. Además de una sección extra que muestra específicamente el header y footer del sitio web.</p>
 <p><b>Link de primer trabajo compartido en Figma:</b> https://www.figma.com/file/iuhhWdkXOo6bmPSxMRpGHZ/E-Actividad-3.1?type=design&node-id=0-1&mode=design&t=0OtxCC14hTxO7J03-0 </p>
 <p>Luego en este otro apartado de trabajo titulado <b>Actividad FrontEnd 3.1</b> se encuentra una página llamada <b>Mockups</b> la cual contiene los diseños mockups de nuestro sitio web.</p>
 <p><b>Link de segundo trabajo compartido en Figma:</b> https://www.figma.com/file/BOeIav3lXddyaiG5uiCLyE/Actividad-FrontEnd-3.1?type=design&node-id=9-2&mode=design 
