@@ -58,7 +58,7 @@
     <main> <!-- Cristian Rangel inicio de sesión-->
         <div class="estilo bordeAnimado">
             <section class="centrar formulario">
-                <img class="formulario_logo" src="../imagenes/logo3.png" alt="logo">
+                <img class="formulario_logo" src="../imagenes/logo5.png" alt="logo">
                 <h2 class="principal" >Iniciar Sesión</h2>
                 <form class="formulario form" action="http://localhost:3000/iniciar_sesion" method="post">
                     <div class="rellenar">
@@ -147,9 +147,11 @@
             body: data
           })
           .then(response => response.json())
-          .then(data => {
-            if (data.result && data.result.confirmacion) {
-              window.location.href = '/catalogo';
+          .then(response => {
+            if (response.result && response.result.confirmacion == true) {
+
+              console.log('se encontro');
+              window.location.href = './catalogo.html';
             } else {
               // Muestra un mensaje de error
               var errorDiv = document.createElement('div');
